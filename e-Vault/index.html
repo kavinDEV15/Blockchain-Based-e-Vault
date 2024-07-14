@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eVault System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blockchain-based eVault System</h1>
+            <p>Securely store and retrieve your legal documents using cutting-edge blockchain technology.</p>
+        </header>
+        
+        <div class="form-container upload">
+            <h2>Upload Document</h2>
+            <input type="file" id="fileInput" />
+            <button id="uploadBtn">Upload Document</button>
+        </div>
+        
+        <div class="form-container retrieve">
+            <h2>Retrieve Document</h2>
+            <input type="text" id="retrieveDocId" placeholder="Enter CID" />
+            <button id="retrieveBtn">Retrieve Document</button>
+        </div>
+        
+        <div id="message" style="display: none; margin-top: 20px;"></div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 eVault System. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

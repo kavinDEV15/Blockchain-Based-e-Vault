@@ -1,0 +1,109 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #e8f5e9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+header {
+    grid-column: 1 / -1;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #004b87; /* Société Générale blue */
+}
+
+p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4c8fbd; /* Complementary blue */
+}
+
+.form-container {
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type="file"],
+input[type="text"],
+button {
+    font-family: "Courier New", Courier, monospace;
+    margin: 15px 0;
+    padding: 15px;
+    width: calc(100% - 30px);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004b87; /* Société Générale blue */
+}
+
+pre {
+    text-align: left;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+#message {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+footer a {
+    color: #004b87; /* Société Générale blue */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
